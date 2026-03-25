@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude-talk-to-figma__join_channel",
+      "mcp__claude-talk-to-figma__get_selection",
+      "mcp__claude-talk-to-figma__get_node_info",
+      "mcp__claude-talk-to-figma__get_document_info",
+      "mcp__claude-talk-to-figma__create_frame",
+      "mcp__claude-talk-to-figma__create_text",
+      "mcp__claude-talk-to-figma__set_svg",
+      "mcp__claude-talk-to-figma__set_corner_radius",
+      "mcp__claude-talk-to-figma__set_node_properties",
+      "mcp__claude-talk-to-figma__export_node_as_image",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(claude mcp:*)",
+      "mcp__figma__generate_figma_design",
+      "Bash(open \"http://localhost:3000/agritech-landing.html#figmacapture=0f6bf16f-68a1-4169-b508-56fa97eca55b&figmaendpoint=https%3A%2F%2Fmcp.figma.com%2Fmcp%2Fcapture%2F0f6bf16f-68a1-4169-b508-56fa97eca55b%2Fsubmit&figmadelay=1000\")"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toast - Contribution Reminder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Geist', sans-serif;
+      background: #efefef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 540px;
+      height: 540px;
+    }
+
+    .toast-card {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 16px;
+      padding: 16px;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Header */
+    .toast-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toast-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-container {
+      width: 32px;
+      height: 32px;
+      background: #4eb16d;
+      border-radius: 5.33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icon-container svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .label {
+      color: #939398;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    /* Body */
+    .toast-body {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toast-title {
+      color: #262626;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .toast-description {
+      color: #959595;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    /* Actions */
+    .toast-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .toast-btn {
+      flex: 1;
+      height: 36px;
+      background: #f5f5f5;
+      border: none;
+      border-radius: 8px;
+      color: #262626;
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .toast-btn:hover {
+      background: #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toast-card">
+
+    <!-- Header -->
+    <div class="toast-header">
+      <div class="toast-header-left">
+        <div class="icon-container">
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="8" r="6" stroke="white" stroke-width="1.5"/>
+            <text x="8" y="12" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Geist, sans-serif">$</text>
+          </svg>
+        </div>
+        <span class="label">CONTRIBUTION</span>
+      </div>
+      <span class="label">Due: 3 March</span>
+    </div>
+
+    <!-- Body -->
+    <div class="toast-body">
+      <p class="toast-title">Owambe Ajo</p>
+      <p class="toast-description">
+        Your contribution for the 5th cycle of Owambe Ajo is due on 3rd of March. Pay to keep your progress on track!
+      </p>
+    </div>
+
+    <!-- Actions -->
+    <div class="toast-actions">
+      <button class="toast-btn">Not now</button>
+      <button class="toast-btn">Pay now</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
